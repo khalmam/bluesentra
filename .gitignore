@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Environment and secrets
+!.env.example
+
+# Editors and OS
+.idea/
+.DS_Store
+
+# Local data
+backend/media/
+*.sqlite3
+config.bat

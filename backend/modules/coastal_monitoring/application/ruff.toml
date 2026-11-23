@@ -1,0 +1,10 @@
+extend = "../../../pyproject.toml"
+
+[lint]
+extend-select = ["TID251"]
+
+[lint.flake8-tidy-imports.banned-api]
+"django".msg = "Pure layers must not depend on Django (ADR-018, ADR-021)."
+"rest_framework".msg = "Pure layers must not depend on DRF (ADR-018, ADR-021)."
+"modules.coastal_monitoring.infrastructure".msg = "Domain and application must not import infrastructure."
+"modules.environmental_reports.infrastructure".msg = "Domain and application must not import infrastructure."
